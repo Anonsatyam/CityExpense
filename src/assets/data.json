@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "img": "./assets/Images/market.png",
+        "category_id": 4,
+        "category_name": "markets",
+        "title": "Markets",
+        "subTitle": "Check Market Expences"
+    },
+    {
+        "id": 2,
+        "img": "./assets/Images/apartments.png",
+        "category_id": 1,
+        "category_name": "buyApartments",
+        "title": "Buy Apartments",
+        "subTitle": "Check Apartment Rate"
+    },
+    {
+        "id": 3,
+        "img": "./assets/Images/childcare.png",
+        "category_id": 2,
+        "category_name": "childcare",
+        "title": "Childcare",
+        "subTitle": "Check Childcare Rate"
+    },
+    {
+        "id": 4,
+        "img": "./assets/Images/clothing.png",
+        "category_id": 3,
+        "category_name": "clothingandshoes",
+        "title": "Clothing And Shoes",
+        "subTitle": "Check Clothing Rate"
+    },
+    {
+        "id": 5,
+        "img": "./assets/Images/flatRent.png",
+        "category_id": 5,
+        "category_name": "flatRent",
+        "title": "Rent Per Month",
+        "subTitle": "Check Rent Per Month Rate"
+    },
+    {
+        "id": 6,
+        "img": "./assets/Images/resturants.png",
+        "category_id": 6,
+        "category_name": "restaurants",
+        "title": "Restaurants",
+        "subTitle": "Check Restaurants Rate"
+    },
+    {
+        "id": 7,
+        "img": "./assets/Images/salaries.png",
+        "category_id": 7,
+        "category_name": "salaries",
+        "title": "Salaries And Financing",
+        "subTitle": "Check Salaries And Financing"
+    },
+    {
+        "id": 8,
+        "img": "./assets/Images/sports.png",
+        "category_id": 8,
+        "category_name": "sports",
+        "title": "Sports And Leisure",
+        "subTitle": "Check Sports And Leisure Rate"
+    },
+    {
+        "id": 9,
+        "img": "./assets/Images/vehicles.png",
+        "category_id": 9,
+        "category_name": "transportation",
+        "title": "Transportation",
+        "subTitle": "Check Transportation Rate"
+    }
+]

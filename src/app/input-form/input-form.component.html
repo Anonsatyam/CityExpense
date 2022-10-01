@@ -1,0 +1,45 @@
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+<div class="container">
+  <div class="main">
+    <div class="row">
+      <h2>Search Expances By City And Country Name</h2>
+    </div>
+    <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+      <div class="row ">
+        <div class="col">
+          <div class="form-group">
+            <label>City Name*</label>
+            <input type="text" noWhitespace class="form-control" formControlName="cityName"
+              [ngClass]="{ 'is-invalid': submitted && f.cityName.errors }" placeholder="Ex: Noida" [(ngModel)]="city">
+            <span>
+              <img class="icon" src="../../assets/Images/apartments.png" alt="">
+              <!-- <mat-icon class="icon">location_city</mat-icon> -->
+            </span>
+            <div *ngIf="f.cityName.touched && f.cityName.invalid" class="alert alert-danger">
+              <div *ngIf="f.cityName.errors.required">City Name is required.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label>Country Name*</label>
+            <input type="text" noWhitespace class="form-control" formControlName="countryName"
+              [ngClass]="{ 'is-invalid': submitted && f.countryName.errors }" placeholder="Ex: India" [(ngModel)]="country">
+            <span>
+              <img class="icon" src="../../assets/Images/country.png" alt="">
+              <!-- <mat-icon class="icon">location_city</mat-icon> -->
+            </span>
+            <div *ngIf="f.countryName.touched && f.countryName.invalid" class="alert alert-danger">
+              <div *ngIf="f.countryName.errors.required">Country Name is required.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <button type="submit" class="submit" [disabled]="!dataForm.valid">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- <router-outlet></router-outlet> -->
+<app-info-cards *ngIf="myData1" [abc]="myData1"></app-info-cards>

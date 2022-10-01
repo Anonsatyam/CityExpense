@@ -1,0 +1,24 @@
+<div class="container" style="background-color: rgba(0,0,0,.05); padding: 25px; border-radius: 5px; margin: 50px auto;">
+  <h1 class="text-center my-4">Search Expanse Rate By Different Category.</h1>
+  <div class="row py-4">
+    <div class="col-md-4 my-4" *ngFor="let item of products">
+      <mat-card class="example-card" (click)="showMarketDetails(item)" style="cursor: pointer;">
+        <div class="row">
+          <img src="{{item.img}}" style="padding: 10px;
+    height: 100px;
+    width: 100px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    margin: 0 auto;" alt="">
+        </div>
+        <mat-card-header>
+          <mat-card-title>{{item.title}}</mat-card-title>
+          <app-detailed-info *ngIf="flag"></app-detailed-info>
+        </mat-card-header>
+        <mat-card-content>
+          <p style="text-align: center;">{{item.subTitle}}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
